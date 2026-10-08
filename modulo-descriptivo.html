@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Texto descriptivo</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --pink:#D48CB1; --teal:#105666; --dark:#0B414D;
+  --lightpink:#F3DCE8; --cream:#FBF8F5;
+  --text:#243238; --muted:#60727A; --white:#FFFFFF;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; background:var(--cream); color:var(--text);
+  font-family:'Ancizar Sans',sans-serif; line-height:1.6;
+}
+.topbar {
+  background:var(--teal); color:white; padding:16px 6vw;
+  display:flex; justify-content:space-between; align-items:center; gap:20px;
+  position:sticky; top:0; z-index:10;
+}
+.brand { font-weight:700; letter-spacing:.08em; font-size:.9rem; }
+.topbar a { color:white; text-decoration:none; font-weight:600; }
+.container { width:min(1120px,88%); margin:auto; }
+.hero {
+  min-height:78vh; display:flex; align-items:center; position:relative;
+  overflow:hidden; background:linear-gradient(135deg,var(--teal),var(--dark));
+  color:white; padding:70px 0;
+}
+.hero::before,.hero::after {
+  content:""; position:absolute; border-radius:50%; border:1px solid rgba(255,255,255,.18);
+}
+.hero::before { width:430px;height:430px;right:-100px;top:-130px; }
+.hero::after { width:260px;height:260px;left:-100px;bottom:-130px; }
+.kicker { color:var(--pink); font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.hero h1 { font-size:clamp(3rem,8vw,6.5rem); line-height:.92; margin:18px 0; max-width:850px; }
+.hero p { max-width:720px; font-size:1.2rem; color:#edf6f7; }
+.button {
+  display:inline-block; margin-top:24px; padding:13px 20px; border-radius:999px;
+  background:var(--pink); color:var(--dark); text-decoration:none; font-weight:800;
+}
+.section { padding:70px 0; }
+.section.alt { background:var(--lightpink); }
+.section h2 { color:var(--teal); font-size:2.5rem; margin:0 0 12px; }
+.lead { color:var(--muted); font-size:1.1rem; max-width:800px; }
+.grid {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; margin-top:30px;
+}
+.card {
+  background:white; border-radius:24px; padding:28px; border:1px solid #eadfe5;
+  box-shadow:0 10px 30px rgba(16,86,102,.07); transition:.2s;
+}
+.card:hover { transform:translateY(-3px); }
+.number { color:var(--pink); font-size:.9rem; font-weight:800; letter-spacing:.12em; }
+.card h3 { color:var(--teal); font-size:1.7rem; margin:8px 0; }
+.card p { color:var(--muted); }
+.card a { color:var(--teal); font-weight:800; text-decoration:none; }
+.pill {
+  display:inline-block; padding:5px 10px; border-radius:999px;
+  background:var(--lightpink); color:var(--teal); font-size:.85rem; margin:4px 4px 0 0;
+}
+.module-head {
+  background:var(--teal); color:white; padding:70px 0 55px;
+}
+.module-head h1 { font-size:clamp(2.8rem,6vw,5rem); line-height:1; margin:12px 0; }
+.module-head p { max-width:780px; font-size:1.15rem; color:#eaf5f6; }
+.content-grid {
+  display:grid; grid-template-columns:1.35fr .65fr; gap:30px; align-items:start;
+}
+.box {
+  background:white; border-left:6px solid var(--pink); border-radius:18px;
+  padding:24px; margin:20px 0; box-shadow:0 8px 24px rgba(16,86,102,.06);
+}
+.box h3 { color:var(--teal); margin-top:0; }
+ul { padding-left:22px; }
+li { margin:7px 0; }
+.side {
+  background:var(--lightpink); border-radius:22px; padding:24px; position:sticky; top:88px;
+}
+.side h3 { color:var(--teal); margin-top:0; }
+.side a { display:block; padding:8px 0; color:var(--teal); text-decoration:none; font-weight:600; }
+.nav-modules {
+  display:flex; justify-content:space-between; gap:16px; margin-top:50px;
+}
+.nav-modules a {
+  flex:1; padding:15px 18px; border-radius:14px; text-decoration:none; font-weight:800;
+  border:1px solid var(--teal); color:var(--teal); background:white;
+}
+.nav-modules a.next { background:var(--pink); color:var(--dark); border-color:var(--pink); text-align:right; }
+footer { background:var(--dark); color:#dcebed; padding:30px 0; margin-top:30px; }
+footer p { margin:4px 0; }
+@media(max-width:760px){
+  .grid,.content-grid { grid-template-columns:1fr; }
+  .side { position:static; }
+  .nav-modules { flex-direction:column; }
+  .nav-modules a.next { text-align:left; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">RECURSOS · ÁREA</div>
+  <a href="recursos.html">← Portal de recursos</a>
+</div>
+
+<header class="module-head">
+  <div class="container">
+    <div class="kicker">MÓDULO 01 · DESCRIPCIÓN</div>
+    <h1>Texto descriptivo</h1>
+    <p>Presenta un objeto, situación, persona o contexto, real o imaginario. Su objetivo es poner en presencia de las lectoras algo real o imaginario.</p>
+  </div>
+</header>
+<main class="section">
+  <div class="container">
+    <div class="content-grid">
+      <div>
+        <div class="box"><h3>¿Qué caracteriza este texto?</h3><p>La descripción centra la atención en aquello que se presenta al lector. El recurso distingue elementos y tipos de relación que ayudan a construir lo descrito.</p></div>
+<div class="box"><h3>Tipos de descripción</h3><ul>
+<li><strong>Anclaje:</strong> el nombre exacto de aquello que se describe.</li>
+<li><strong>Reformulación:</strong> utilizar otras palabras para expresar aquello que se describe.</li>
+<li><strong>Caracterización:</strong> se compone de dos elementos que caracterizan lo descrito.</li>
+</ul></div>
+<div class="box"><h3>Tipos de relación</h3><ul>
+<li><strong>Asociación:</strong> se relaciona la cosa descrita con algo conocido.</li>
+<li><strong>Contexto:</strong> corresponde al universo en el que se encuentra la cosa descrita.</li>
+</ul></div>
+        <div class="nav-modules">
+          <a href="tipologias_textuales.html">← Módulo anterior</a>
+          <a class="next" href="modulo-narrativo.html">Módulo 02 · Narrativo →</a>
+        </div>
+      </div>
+      <aside class="side">
+        <h3>Ruta del recurso</h3>
+        <a href="tipologias_textuales.html">Portada</a>
+        <a href="modulo-descriptivo.html">01 · Descriptivo</a>
+        <a href="modulo-narrativo.html">02 · Narrativo</a>
+        <a href="modulo-expositivo.html">03 · Expositivo</a>
+        <a href="modulo-argumentativo.html">04 · Argumentativo</a>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer><div class="container">
+  <p><strong>Tipologías textuales · Recurso educativo</strong></p>
+  <p>Área de recursos de aprendizaje</p>
+</div></footer>
+</body>
+</html>
