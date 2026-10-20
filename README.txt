@@ -12,3 +12,7 @@ Para actualizar GitHub Pages: sube/reemplaza estos cinco HTML y la carpeta image
 
 Colores: #D48CB1 y #105666. Fuente: Ancizar Sans.
 Las propuestas de ejemplo de los módulos expositivo y argumentativo están identificadas como material didáctico elaborado para practicar; no son citas del PDF.
+
+Organización de ejemplos visuales:
+- Las portadas de novelas y los ejemplos narrativos están dentro de modulo-narrativo.html.
+- La portada index.html presenta la ruta de aprendizaje y las referencias generales, sin duplicar la galería narrativa.
