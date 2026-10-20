@@ -98,12 +98,31 @@ footer p { margin:4px 0; }
   .nav-modules { flex-direction:column; }
   .nav-modules a.next { text-align:left; }
 }
+
+/* Ampliación pedagógica: ejemplos, portadas y referencias */
+.example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 28px}
+.example-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.example-card h4{color:var(--teal);margin:0 0 8px;font-size:1.15rem}
+.example-card p{margin:8px 0;color:var(--muted)}
+.book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0 28px}
+.book-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.book-card img{width:100%;height:245px;object-fit:contain;background:#fbf8f5;border-radius:10px}
+.book-card h4{color:var(--teal);margin:0;font-size:1.05rem;line-height:1.25}
+.book-card p{margin:0;color:var(--muted);font-size:.96rem}
+.reference-list{padding-left:22px}
+.reference-list li{overflow-wrap:anywhere;margin:10px 0}
+.reference-list a{color:var(--teal)}
+.note{border-radius:14px;padding:16px 18px;background:#f3dce8;border-left:5px solid #D48CB1;margin:18px 0}
+.section-title{color:var(--teal);font-size:1.7rem;margin:28px 0 10px}
+@media(max-width:760px){.example-grid,.book-grid{grid-template-columns:1fr 1fr}.book-card img{height:190px}}
+@media(max-width:480px){.example-grid,.book-grid{grid-template-columns:1fr}.book-card img{height:260px}}
+
 </style>
 </head>
 <body>
 <div class="topbar">
   <div class="brand">RECURSOS · HABILIDADES PARA EL APRENDIZAJE</div>
-  <a href="index.html">← Portal de recursos</a>
+  <a href="index.html">← Portada</a>
 </div>
 
 <header class="module-head">
@@ -133,6 +152,22 @@ footer p { margin:4px 0; }
 <li><strong>Ejemplos y datos.</strong></li>
 </ul></div>
 <div class="box"><h3>¿Qué busca lograr?</h3><p>El texto expositivo organiza y presenta información de forma sistemática para facilitar la comprensión del fenómeno o conocimiento abordado.</p></div>
+
+<div class="box"><h3>Ejemplos de uso del texto expositivo</h3>
+<p>El documento pedagógico describe el texto expositivo como una presentación objetiva y clara de un fenómeno ante un público, con uso importante en el ámbito académico. No incluye títulos concretos de textos expositivos; por eso, los siguientes son modelos orientadores elaborados para practicar sus rasgos.</p>
+<div class="example-grid">
+ <article class="example-card"><h4>Texto de divulgación</h4><p><strong>Tema posible:</strong> cómo se produce un eclipse.</p><p>Explica el fenómeno con definiciones precisas, datos verificables y una secuencia lógica.</p></article>
+ <article class="example-card"><h4>Texto académico</h4><p><strong>Tema posible:</strong> etapas del ciclo del agua.</p><p>Organiza conceptos, describe procesos y utiliza vocabulario específico.</p></article>
+ <article class="example-card"><h4>Comparación y contraste</h4><p><strong>Tema posible:</strong> diferencias entre células vegetales y animales.</p><p>Presenta semejanzas y diferencias con criterios explícitos.</p></article>
+ <article class="example-card"><h4>Causa y efecto</h4><p><strong>Tema posible:</strong> factores que influyen en la erosión del suelo.</p><p>Explica relaciones causales apoyándose en datos o ejemplos.</p></article>
+</div>
+<div class="note"><strong>Actividad breve:</strong> elige uno de los temas y redacta un párrafo de cinco líneas. Usa presente de indicativo, lenguaje denotativo y una organización clara.</div>
+</div>
+<div class="box"><h3>Referencias del módulo</h3><ul class="reference-list">
+<li>Guzmán, A. M. (s. f.). <em>Tipología textual</em>. Unidades de Apoyo para el Aprendizaje, CUAED-UNAM. <a href="https://repositorio-uapa.cuaed.unam.mx/repositorio/moodle/pluginfile.php/2849/mod_resource/content/1/UAPA-Tipologia-Textual/index.html" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+<li>París Vidal, C. (s. f.). <em>El texto. Fundamentos teóricos y aplicaciones prácticas</em>. Educarex. <a href="http://recursos.educarex.es/escuela2.0/Lengua_Castellana/el_texto/index.htm" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+</ul></div>
+
         <div class="nav-modules">
           <a href="modulo-narrativo.html">← Módulo anterior</a>
           <a class="next" href="modulo-argumentativo.html">Módulo 04 · Argumentativo →</a>

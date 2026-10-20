@@ -98,12 +98,31 @@ footer p { margin:4px 0; }
   .nav-modules { flex-direction:column; }
   .nav-modules a.next { text-align:left; }
 }
+
+/* Ampliación pedagógica: ejemplos, portadas y referencias */
+.example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 28px}
+.example-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.example-card h4{color:var(--teal);margin:0 0 8px;font-size:1.15rem}
+.example-card p{margin:8px 0;color:var(--muted)}
+.book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0 28px}
+.book-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.book-card img{width:100%;height:245px;object-fit:contain;background:#fbf8f5;border-radius:10px}
+.book-card h4{color:var(--teal);margin:0;font-size:1.05rem;line-height:1.25}
+.book-card p{margin:0;color:var(--muted);font-size:.96rem}
+.reference-list{padding-left:22px}
+.reference-list li{overflow-wrap:anywhere;margin:10px 0}
+.reference-list a{color:var(--teal)}
+.note{border-radius:14px;padding:16px 18px;background:#f3dce8;border-left:5px solid #D48CB1;margin:18px 0}
+.section-title{color:var(--teal);font-size:1.7rem;margin:28px 0 10px}
+@media(max-width:760px){.example-grid,.book-grid{grid-template-columns:1fr 1fr}.book-card img{height:190px}}
+@media(max-width:480px){.example-grid,.book-grid{grid-template-columns:1fr}.book-card img{height:260px}}
+
 </style>
 </head>
 <body>
 <div class="topbar">
   <div class="brand">RECURSOS · HABILIDADES PARA EL APRENDIZAJE </div>
-  <a href="index.html">← Portal de recursos</a>
+  <a href="index.html">← Portada</a>
 </div>
 
 <header class="module-head">
@@ -132,6 +151,17 @@ footer p { margin:4px 0; }
 <li>Datos estadísticos o sondeo</li>
 </ul></div>
 <div class="box"><h3>3. Conclusión</h3><p>Es el cierre del texto. Recoge lo más importante de las secciones anteriores y puede definirse como una síntesis de la postura adoptada. Su extensión es breve, al igual que la introducción.</p></div>
+
+<div class="box"><h3>Modelo breve para identificar una argumentación</h3>
+<p>El PDF pedagógico explica los componentes del texto argumentativo, pero no incluye un texto completo de ejemplo. El siguiente modelo es una práctica creada para este recurso, no una cita del documento.</p>
+<div class="example-card"><h4>Tema: lectura en formato digital</h4><p><strong>Tesis:</strong> las instituciones educativas deberían ofrecer recursos digitales accesibles como complemento de los materiales impresos.</p><p><strong>Argumento:</strong> los recursos digitales permiten actualizar contenidos y consultar materiales desde distintos dispositivos, siempre que exista acceso a internet y se consideren alternativas para quienes no lo tienen.</p><p><strong>Contraargumento:</strong> la lectura en pantalla puede generar distracciones.</p><p><strong>Conclusión:</strong> combinar formatos y enseñar estrategias de lectura puede aprovechar las ventajas de ambos medios.</p></div>
+<div class="note"><strong>Actividad breve:</strong> identifica la tesis, clasifica el argumento y escribe un contraargumento que cuestione la postura presentada.</div>
+</div>
+<div class="box"><h3>Referencias del módulo</h3><ul class="reference-list">
+<li>LEO, Universidad de los Andes. (2026, 28 de junio). <em>Página de inicio | LEO Universidad de los Andes</em>. <a href="https://leo.uniandes.edu.co/" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+<li>Centro Virtual Cervantes. (s. f.). <em>Tipología textual</em>. <a href="https://cvc.cervantes.es/ensenanza/biblioteca_ele/diccio_ele/diccionario/tipologia.htm" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+</ul></div>
+
         <div class="nav-modules">
           <a href="modulo-expositivo.html">← Módulo anterior</a>
           <a class="next" href="index.html">Volver a la portada →</a>
@@ -139,7 +169,7 @@ footer p { margin:4px 0; }
       </div>
       <aside class="side">
         <h3>Ruta del recurso</h3>
-        <a href="tipologias_textuales.html">Portada</a>
+        <a href="index.html">Portada</a>
         <a href="modulo-descriptivo.html">01 · Descriptivo</a>
         <a href="modulo-narrativo.html">02 · Narrativo</a>
         <a href="modulo-expositivo.html">03 · Expositivo</a>

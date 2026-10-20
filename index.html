@@ -43,9 +43,8 @@ body {
   background:var(--pink); color:var(--dark); text-decoration:none; font-weight:800;
 }
 .section { padding:40px 0; }
-.section:first-of-type {
-  padding-bottom: 20px;
-}
+.section:first-of-type { padding-bottom: 20px; }
+.section + .section { padding-top: 20px; }
 .section.alt { background:var(--lightpink); }
 .section h2 { color:var(--teal); font-size:2.5rem; margin:0 0 12px; }
 .lead { color:var(--muted); font-size:1.1rem; max-width:800px; }
@@ -101,6 +100,16 @@ footer p { margin:4px 0; }
   .nav-modules { flex-direction:column; }
   .nav-modules a.next { text-align:left; }
 }
+
+/* Estilos de portadas, ejemplos y bibliografía */
+.book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0 28px}
+.book-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.book-card img{width:100%;height:245px;object-fit:contain;background:#fbf8f5;border-radius:10px}
+.book-card h4{color:var(--teal);margin:0;font-size:1.05rem;line-height:1.25}
+.book-card p{margin:0;color:var(--muted);font-size:.96rem}
+.reference-list{padding-left:22px}.reference-list li{overflow-wrap:anywhere;margin:10px 0}.reference-list a{color:var(--teal)}
+@media(max-width:760px){.book-grid{grid-template-columns:1fr 1fr}.book-card img{height:190px}}
+@media(max-width:480px){.book-grid{grid-template-columns:1fr}.book-card img{height:260px}}
 </style>
 </head>
 <body>
@@ -172,6 +181,42 @@ footer p { margin:4px 0; }
 </section>
 
 
+
+
+<section class="section" id="portadas">
+ <div class="container">
+  <div class="kicker">Ejemplos del material</div>
+  <h2>Las tipologías también aparecen en los libros</h2>
+  <p class="lead">El documento de ejemplos propone novelas como casos de texto narrativo. Observa sus portadas y reconoce que el título y la imagen pueden anticipar personajes, ambientes o conflictos.</p>
+  <div class="book-grid">
+   <article class="book-card"><img src="imagenes/ejemplo_p1_img1.png" alt="Portada de Orgullo y prejuicio, de Jane Austen"><h4><em>Orgullo y prejuicio</em></h4><p>Jane Austen · Ejemplo de novela narrativa.</p></article>
+   <article class="book-card"><img src="imagenes/ejemplo_p1_img2.png" alt="Portada de Crimen y castigo, de Fiódor Dostoievski"><h4><em>Crimen y castigo</em></h4><p>Fiódor Dostoievski · Ejemplo de novela narrativa.</p></article>
+   <article class="book-card"><img src="imagenes/ejemplo_p1_img3.png" alt="Portada de Moby-Dick, de Herman Melville"><h4><em>Moby-Dick</em></h4><p>Herman Melville · Ejemplo de novela narrativa.</p></article>
+  </div>
+  <p class="lead">Las portadas se incluyen como material visual de apoyo a partir del documento de ejemplos aportado.</p>
+ </div>
+</section>
+
+
+<section class="section alt" id="referencias">
+ <div class="container">
+  <div class="kicker">Fuentes consultadas</div>
+  <h2>Referencias bibliográficas</h2>
+  <p class="lead">Se conservan las fuentes citadas en los documentos base. Los enlaces se abren en una pestaña nueva.</p>
+  <div class="box"><ul class="reference-list">
+   <li>Centro Virtual Cervantes. (s. f.). <em>Tipología textual</em>. Diccionario de términos clave de ELE. <a href="https://cvc.cervantes.es/ensenanza/biblioteca_ele/diccio_ele/diccionario/tipologia.htm" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>Escuela Nacional Preparatoria, UNAM. (s. f.). <em>Recursos del Colegio de Literatura</em>. <a href="https://recursos.literatura.enp.unam.mx/tema.php?id=62" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>Guzmán, A. M. (s. f.). <em>Tipología textual</em>. Unidades de Apoyo para el Aprendizaje, CUAED-UNAM. <a href="https://repositorio-uapa.cuaed.unam.mx/repositorio/moodle/pluginfile.php/2849/mod_resource/content/1/UAPA-Tipologia-Textual/index.html" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>LEO, Universidad de los Andes. (2026, 28 de junio). <em>Página de inicio | LEO Universidad de los Andes</em>. <a href="https://leo.uniandes.edu.co/" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>París Vidal, C. (s. f.). <em>El texto. Fundamentos teóricos y aplicaciones prácticas</em>. Educarex. <a href="http://recursos.educarex.es/escuela2.0/Lengua_Castellana/el_texto/index.htm" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>Vicente, E. A. (2024, 21 de agosto). <em>14 ejemplos de textos narrativos</em>. Enciclopedia Significados. <a href="https://www.significados.com/ejemplos-de-textos-narrativos/" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li>Vicente, E. A. (2023, 4 de septiembre). <em>13 ejemplos de texto descriptivo</em>. Enciclopedia Significados. <a href="https://www.significados.com/ejemplos-de-texto-descriptivo/" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+   <li><em>Tipología textual</em>. (s. f.). Documento de referencia citado en el material pedagógico. <a href="https://viaxeaitaca.wordpress.com/wp-content/uploads/2013/09/tipologia_textual.pdf" target="_blank" rel="noopener">Consultar PDF</a>.</li>
+   <li><em>Introducción a la tipología textual</em>. (s. f.). ResearchGate. <a href="https://www.researchgate.net/publication/331921889_Introduccion_a_la_tipologia_textual" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+  </ul></div>
+  <p class="lead">Nota: el documento pedagógico también menciona un artículo alojado en Dialnet: <a href="https://dialnet.unirioja.es/descarga/articulo/2100070.pdf" target="_blank" rel="noopener">consultar PDF</a>. La referencia bibliográfica completa no aparece en el archivo proporcionado.</p>
+ </div>
+</section>
 
 <footer><div class="container">
   <p><strong>Tipologías textuales · Recurso educativo</strong></p>

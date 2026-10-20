@@ -98,12 +98,31 @@ footer p { margin:4px 0; }
   .nav-modules { flex-direction:column; }
   .nav-modules a.next { text-align:left; }
 }
+
+/* Ampliación pedagógica: ejemplos, portadas y referencias */
+.example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 28px}
+.example-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.example-card h4{color:var(--teal);margin:0 0 8px;font-size:1.15rem}
+.example-card p{margin:8px 0;color:var(--muted)}
+.book-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0 28px}
+.book-card{background:#fff;border:1px solid #eadfe5;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:0 8px 24px rgba(16,86,102,.05)}
+.book-card img{width:100%;height:245px;object-fit:contain;background:#fbf8f5;border-radius:10px}
+.book-card h4{color:var(--teal);margin:0;font-size:1.05rem;line-height:1.25}
+.book-card p{margin:0;color:var(--muted);font-size:.96rem}
+.reference-list{padding-left:22px}
+.reference-list li{overflow-wrap:anywhere;margin:10px 0}
+.reference-list a{color:var(--teal)}
+.note{border-radius:14px;padding:16px 18px;background:#f3dce8;border-left:5px solid #D48CB1;margin:18px 0}
+.section-title{color:var(--teal);font-size:1.7rem;margin:28px 0 10px}
+@media(max-width:760px){.example-grid,.book-grid{grid-template-columns:1fr 1fr}.book-card img{height:190px}}
+@media(max-width:480px){.example-grid,.book-grid{grid-template-columns:1fr}.book-card img{height:260px}}
+
 </style>
 </head>
 <body>
 <div class="topbar">
   <div class="brand">RECURSOS · HABILIDADES PARA EL APRENDIZAJE </div>
-  <a href="index.html">← Portal de recursos</a>
+  <a href="index.html">← Portada</a>
 </div>
 
 <header class="module-head">
@@ -128,6 +147,32 @@ footer p { margin:4px 0; }
 <li><strong>In extrema res:</strong> comienza cerca del final.</li>
 </ul></div>
 <div class="box"><h3>La organización de los acontecimientos</h3><p>La estructura narrativa determina cómo se presenta la sucesión de acontecimientos y modifica el orden en que la historia llega al lector.</p></div>
+
+<div class="box"><h3>Ejemplos de novelas narrativas</h3>
+<p>El documento <em>Ejemplos de Tipologías Textuales</em> presenta estas novelas como ejemplos de narración extensa con personajes, espacio y tiempo determinados.</p>
+<div class="book-grid">
+ <article class="book-card"><img src="imagenes/ejemplo_p1_img1.png" alt="Portada de Orgullo y prejuicio"><h4><em>Orgullo y prejuicio</em></h4><p>Jane Austen</p></article>
+ <article class="book-card"><img src="imagenes/ejemplo_p1_img2.png" alt="Portada de Crimen y castigo"><h4><em>Crimen y castigo</em></h4><p>Fiódor Dostoievski</p></article>
+ <article class="book-card"><img src="imagenes/ejemplo_p1_img3.png" alt="Portada de Moby-Dick"><h4><em>Moby-Dick</em></h4><p>Herman Melville</p></article>
+ <article class="book-card"><img src="imagenes/ejemplo_p2_img1.png" alt="Portada de Cien años de soledad"><h4><em>Cien años de soledad</em></h4><p>Gabriel García Márquez</p></article>
+ <article class="book-card"><img src="imagenes/ejemplo_p2_img2.png" alt="Portada de 1984"><h4><em>1984</em></h4><p>George Orwell</p></article>
+</div>
+<div class="note"><strong>Lectura de ejemplo:</strong> el material reproduce el inicio de <em>Cien años de soledad</em> y de <em>Crónica de una muerte anunciada</em>. En ambos casos, identifica qué acontecimiento se anticipa y qué preguntas despierta sobre la historia.</div>
+</div>
+<div class="box"><h3>Otras formas narrativas mencionadas</h3><ul>
+<li><strong>Cuento literario:</strong> narración breve de temática diversa, con inicio, nudo y desenlace.</li>
+<li><strong>Leyenda:</strong> relato relacionado con la fantasía y el folclore local; el documento menciona La Llorona y La Patasola.</li>
+<li><strong>Mito:</strong> historia con seres sobrenaturales que explica fenómenos o acontecimientos; se mencionan Prometeo, Pandora y Teseo y el Minotauro.</li>
+<li><strong>Fábula:</strong> narración protagonizada por animales que transmite una lección moral; se incluyen La liebre y la tortuga y La gallina de los huevos de oro.</li>
+<li><strong>Epopeya:</strong> relato de hazañas de un pueblo; se mencionan <em>La epopeya de Gilgamesh</em>, <em>La Ilíada</em>, <em>La Eneida</em> y <em>La Divina Comedia</em>.</li>
+<li><strong>Diario:</strong> escrito que plasma experiencias vividas por el autor en un día; se menciona <em>El diario de Ana Frank</em>.</li>
+<li><strong>Crónica:</strong> narración cronológica de acontecimientos; se mencionan <em>Crónica de una muerte anunciada</em> y <em>Crónicas marcianas</em>.</li>
+</ul></div>
+<div class="box"><h3>Referencias del módulo</h3><ul class="reference-list">
+<li>Vicente, E. A. (2024, 21 de agosto). <em>14 ejemplos de textos narrativos</em>. Enciclopedia Significados. <a href="https://www.significados.com/ejemplos-de-textos-narrativos/" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+<li>Centro Virtual Cervantes. (s. f.). <em>Tipología textual</em>. <a href="https://cvc.cervantes.es/ensenanza/biblioteca_ele/diccio_ele/diccionario/tipologia.htm" target="_blank" rel="noopener">Consultar fuente</a>.</li>
+</ul></div>
+
         <div class="nav-modules">
           <a href="modulo-descriptivo.html">← Módulo anterior</a>
           <a class="next" href="modulo-expositivo.html">Módulo 03 · Expositivo →</a>
